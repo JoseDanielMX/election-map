@@ -39,3 +39,16 @@ jane.tallyUpTotalVotes();
 // Consoling log total votes
 console.log(john.totalVotes);
 console.log(jane.totalVotes);
+
+// Determining winner
+var winner = "?";
+
+if (john.totalVotes > jane.totalVotes) {
+    winner = john.name;
+} else if (john.totalVotes < jane.totalVotes) {
+    winner = jane.name;
+} else {
+    winner = "DRAW"
+}
+
+console.log("The winner is " + winner);
