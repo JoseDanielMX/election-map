@@ -33,6 +33,13 @@ var setStateResults = function(state) {
     } else if (john.electionResults[state] < jane.electionResults[state]) {
         theStates[state].winner = jane;
     }
+    // Changing the color of each state based on the winner
+    var stateWinner = theStates[state].winner;
+    if (stateWinner !== null) {
+        theStates[state].rgbColor = stateWinner.partyColor;
+    } else {
+        theStates[state].rgbColor = [11, 32, 57];
+    }
 }
 
 // Tallying votes
