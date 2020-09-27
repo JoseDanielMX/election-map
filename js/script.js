@@ -25,6 +25,16 @@ jane.electionResults[4] = 38;
 john.electionResults[43] = 11;
 jane.electionResults[43] = 27;
 
+// Assigning the winner of each state
+var setStateResults = function(state) {
+    theStates[state].winner = null;
+    if (john.electionResults[state] > jane.electionResults[state]) {
+        theStates[state].winner = john;
+    } else if (john.electionResults[state] < jane.electionResults[state]) {
+        theStates[state].winner = jane;
+    }
+}
+
 // Tallying votes
 politician.tallyUpTotalVotes = function() {
     this.totalVotes = 0;
