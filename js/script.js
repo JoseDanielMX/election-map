@@ -36,7 +36,7 @@ var setStateResults = function(state) {
     // Changing the color of each state based on the winner
     var stateWinner = theStates[state].winner;
     if (stateWinner !== null) {
-        theStates[state].rgbColor = stateWinner.partyColor;
+        theStates[state].rgbColor = stateWinner.color;
     } else {
         theStates[state].rgbColor = [11, 32, 57];
     }
