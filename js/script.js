@@ -33,14 +33,6 @@ jane.electionResults[4] = 38;
 john.electionResults[43] = 11;
 jane.electionResults[43] = 27;
 
-// Calling the method for each politician
-john.tallyUpTotalVotes();
-jane.tallyUpTotalVotes();
-
-// Consoling log total votes
-console.log(john.totalVotes);
-console.log(jane.totalVotes);
-
 // Assigning the winner of each state
 var setStateResults = function(state) {
     theStates[state].winner = null;
@@ -57,6 +49,14 @@ var setStateResults = function(state) {
         theStates[state].rgbColor = [11, 32, 57];
     }
 }
+
+// Calling the method for each politician
+john.tallyUpTotalVotes();
+jane.tallyUpTotalVotes();
+
+// Consoling log total votes
+console.log(john.totalVotes);
+console.log(jane.totalVotes);
 
 // Determining winner
 var winner = "?";
