@@ -1,10 +1,4 @@
-.page {
-  width: 80%;
-  max-width: 960px;
-  margin: 0 auto;
-  text-align: left;
-  background-color: #eee;
-}
+/***** BASE STYLE *****/
 
 body {
   font: 16px/26px 'Open Sans', Helvetica, Arial, sans-serif;
@@ -14,12 +8,24 @@ body {
   background-color: #eee;
 }
 
+/***** HEADER *****/
+
 header {
   padding: 0.75em 0;
   text-align: center;
   font-family: 'Montserrat', serif;
   font-size: 21px;
   text-shadow: 1px 1px #ccc;
+}
+
+/***** MAIN CONTENT *****/
+
+.page {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #eee;
 }
 
 .map-container {
@@ -39,6 +45,7 @@ header {
   font: 16px/28px 'Open Sans', Helvetica, Arial, sans-serif;
   color: #454545;
 }
+
 #stateResults, #countryResults {
   border-collapse: collapse;
   background-color: #f2f2f2;
@@ -51,26 +58,33 @@ th, td {
   text-align: left;
   padding: 8px;
 }
+
 #stateResults th{
   background-color: #3b3b3b;
   color: white;
 }
+
 #countryResults th {
   background-color: #f16059;
   color: white;
 }
+
 .name-1 {
   background-color: rgb(132,17,11);
   color: white;
 }
+
 .name-2 {
   background-color: rgb(245, 141, 136);
   color: white;
 }
+
 .winner {
   background-color: #f16059;
   color: white;
 }
+
+/***** FOOTER *****/
 
 footer p {
   font-family: "Montserrat", sans-serif;
@@ -78,6 +92,7 @@ footer p {
   text-align: center;
   text-transform: uppercase;
 }
+
 footer span {
   color: #f16059;
   padding: 0 5px;
