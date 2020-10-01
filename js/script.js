@@ -47,6 +47,30 @@ var setStateResults = function(state) {
         theStates[state].rgbColor = stateWinner.color;
     } else {
         theStates[state].rgbColor = [11, 32, 57];
+    }    
+    // Adding data to the HTML state results table
+    var stateDataTable = document.getElementById('stateResults');
+    var header = stateDataTable.children[0];
+    var body = stateDataTable.children[1];
+    var stateName = header.children[0].children[0];
+    var abbrev = header.children[0].children[1];
+    var politician1Name = body.children[0].children[0];
+    var politician2Name = body.children[1].children[0];
+    var politician1Results = body.children[0].children[1];
+    var politician2Results = body.children[1].children[1];
+    var winnersName = body.children[2].children[1];
+
+    stateName.innerText = theStates[state].nameFull;
+    abbrev.innerText = "(" + theStates[state].nameAbbrev + ")";
+    politician1Name.innerText = john.name;
+    politician2Name.innerText = jane.name;
+    politician1Results.innerText = john.electionResults[state];
+    politician2Results.innerText = jane.electionResults[state];
+
+    if (theStates[state].winner === null) {
+        winnersName.innerText = "DRAW";
+    } else {
+        winnersName.innerText = theStates[state].winner.name;
     }
 }
 
