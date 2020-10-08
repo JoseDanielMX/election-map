@@ -1,10 +1,10 @@
 /* Map Technology Copyright (C) 2011 DougX.net, used with permission */
 
-var g_map_backgroundColor = "#eeeeee";        // background to draw map on
-var g_map_borderColor = "#ffffff";            // state border color
-var g_map_highlightBorderColor = "white";  // highlighted state border color
+var g_map_backgroundColor = "transparent";        // background to draw map on
+var g_map_borderColor = "#204060";            // state border color
+var g_map_highlightBorderColor = "#132639";  // highlighted state border color
 
-var g_map_baseRGB = [180, 180, 180];          // state color default
+var g_map_baseRGB = [230, 242, 255];          // state color default
 var g_map_highlightRGB = [11, 32, 57];       // state color when highlighted
 
 var g_map_isIE9 = false;      // must detect IE9 for proper mouse position
