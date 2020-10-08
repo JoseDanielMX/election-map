@@ -16,6 +16,8 @@ var g_map_canvas;
 var g_map_context;
 var g_map_renderInterval;
 
+var hoverSound = new Audio('./sounds/swish.m4a');
+
 
 var initMap = function () {
   g_map_canvas = document.getElementById('map_canvas');
@@ -342,6 +344,7 @@ State.prototype.mouseIn = function () {
   if (!this.highlighted) {
     this.renderCount = this.gradientOffset;
     setStateResults(this.id);
+    hoverSound.play();
   }
 
   this.highlighted = true;
