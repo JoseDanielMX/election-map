@@ -20,11 +20,11 @@
             <div class="hide bottom"></div>
         </div>
     </header>
-    <div class="page">
+    <main>
         <div class="map-container">
             <canvas id="map_canvas" width="800" height="550" style="position:relative;">
             </canvas>
-            <table id='stateResults' style="position:absolute; bottom:10px; right:10px;">
+            <table id='stateResults'>
                 <theader>
                     <tr>
                         <th>State results</th>
@@ -46,7 +46,7 @@
                 </tr>
                 </tbody>
             </table>
-            <table id='countryResults' style="position:absolute; top:10px; left:10px;">
+            <table id='countryResults'>
                 <tbody>
                 <tr>
                     <td class="name-1">NAME1</td>
@@ -59,11 +59,10 @@
                 </tbody>
             </table>
         </div>
-        <br clear="all">
+    </main>
         <footer>
             <p>&copy; Skillcrush 2020 <span>//</span> HTML5 Map Created By: <a href="http://dougx.net/map/usmap.html" target="_blank">DougX.net</a></p>
         </footer>
-    </div>
 <script src="js/map.js"></script>
 <script src="js/script.js"></script>
 </body>

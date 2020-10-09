@@ -436,11 +436,9 @@ header {
 
 /***** MAIN CONTENT *****/
 
-.page {
-  width: 80%;
-  max-width: 960px;
-  margin: 0 auto;
-  text-align: left;
+main {
+  grid-column: 2 / -2;
+  margin: 25px 0;
 }
 
 .map-container {
@@ -453,12 +451,18 @@ header {
   width: 25%;
   font: 12px/16px 'Open Sans', Helvetica, Arial, sans-serif;
   color: #454545;
+  position: absolute; 
+  bottom: 10px; 
+  right: 10px;
 }
 
 #countryResults {
   width: 95%;
   font: 16px/28px 'Open Sans', Helvetica, Arial, sans-serif;
   color: #454545;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 #stateResults, #countryResults {
