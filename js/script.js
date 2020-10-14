@@ -64,8 +64,8 @@ var setStateResults = function(state) {
     abbrev.innerText = "(" + theStates[state].nameAbbrev + ")";
     politician1Name.innerText = john.name;
     politician2Name.innerText = jane.name;
-    politician1Results.innerText = john.electionResults[state];
-    politician2Results.innerText = jane.electionResults[state];
+    politician1Results.innerText = john.electionResults[state] + " votes";
+    politician2Results.innerText = jane.electionResults[state] + " votes";
 
     if (theStates[state].winner === null) {
         winnersName.innerText = "DRAW";
@@ -100,7 +100,7 @@ var countryDataTable = document.getElementById('countryResults');
 var row = countryDataTable.children[0].children[0];
 
 row.children[0].innerText = john.name;
-row.children[1].innerText = john.totalVotes;
+row.children[1].innerText = john.totalVotes + " votes";
 row.children[2].innerText = jane.name;
-row.children[3].innerText = jane.totalVotes;
+row.children[3].innerText = jane.totalVotes + " votes";
 row.children[5].innerText = winner;
