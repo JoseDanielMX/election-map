@@ -457,28 +457,31 @@ main {
 }
 
 #countryResults {
-  width: 95%;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
   font: 16px/28px 'Open Sans', Helvetica, Arial, sans-serif;
   color: #454545;
-  position: absolute;
-  top: 10px;
-  left: 10px;
 }
 
 #stateResults, #countryResults {
-  border-collapse: collapse;
-  background-color: #f2f2f2;
-  -webkit-box-shadow: 1px 1px 1px 1px rgba(204,204,204,0.5);
-  -moz-box-shadow: 1px 1px 1px 1px rgba(204,204,204,0.5);
-  box-shadow: 1px 1px 1px 1px rgba(204,204,204,0.5);
+  background-color: rgb(230, 242, 255);
+}
+
+#countryResults tr {
+  padding: .35em;
+  display: block;
+  margin-bottom: .625em;
 }
 
 th, td {
-  text-align: left;
-  padding: 8px;
+  text-align: center;
+  padding: .625em;
 }
 
-#stateResults th{
+#stateResults th {
   background-color: #3b3b3b;
   color: white;
 }
@@ -486,6 +489,15 @@ th, td {
 #countryResults th {
   background-color: #f16059;
   color: white;
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  display: block;;
+}
+
+#countryResults td {
+  display: block;
+  font-size: .8em;
 }
 
 .name-1 {
@@ -501,6 +513,11 @@ th, td {
 .winner {
   background-color: #f16059;
   color: white;
+}
+
+.results {
+  background-color: rgb(230, 242, 255);
+  color: #000;
 }
 
 /***** FOOTER *****/
@@ -537,4 +554,15 @@ footer span {
   .small.bottom {
     bottom: 140px;
   }
+
+  /***** MAIN CONTENT *****/
+    
+  #countryResults tr {
+    display: table-row;
+  }
+
+  #countryResults td, #countryResults th {
+    display: table-cell;
+  }
+
 }
