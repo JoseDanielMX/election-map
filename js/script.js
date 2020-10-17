@@ -98,9 +98,16 @@ console.log("The winner is " + winner);
 // Adding data to the HTML country result table that is in the header
 var countryDataTable = document.getElementById('countryResults');
 var row = countryDataTable.children[0].children[0];
+var tadaSound = new Audio('./sounds/tada.mp3');
 
 row.children[0].innerText = john.name;
-row.children[1].innerText = john.totalVotes + " votes";
 row.children[2].innerText = jane.name;
-row.children[3].innerText = jane.totalVotes + " votes";
-row.children[5].innerText = winner;
+
+function showResults() {
+    tadaSound.play();
+    row.children[1].innerText = john.totalVotes + " votes";
+    row.children[3].innerText = jane.totalVotes + " votes";
+    row.children[5].style.backgroundColor = "#ffd966";
+    row.children[5].style.color = "#132639";
+    row.children[5].innerText = winner;
+}
