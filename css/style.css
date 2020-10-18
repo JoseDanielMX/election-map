@@ -452,7 +452,18 @@ main {
   margin: 25px 0;
 }
 
+.note {
+  background-color: #fff;
+  border-radius: 30px;
+  font-size: 16px;
+  color: #132639;
+  text-align: center;
+  padding: 10px;
+  margin: 40px 0 20px;
+}
+
 .map-container {
+  display: none;
   width:800px;
   margin: 0 auto;
   position:relative;
@@ -592,6 +603,19 @@ footer span {
 
   #countryResults td, #countryResults th {
     display: table-cell;
+  }
+
+}
+
+@media (min-width: 800px) {
+  /***** MAIN CONTENT *****/
+    
+  .note {
+    display: none;
+  }
+
+  .map-container {
+    display: block;
   }
 
 }
