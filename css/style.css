@@ -1,5 +1,8 @@
 /***** BASE STYLE *****/
-
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   background: linear-gradient(-45deg, #0e214b, #034bc0) no-repeat fixed center;
   font: 16px/26px 'Open Sans', Helvetica, Arial, sans-serif;
@@ -551,6 +554,13 @@ footer p {
 footer span {
   color: #f16059;
   padding: 0 5px;
+}
+
+#confetti_canvas {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
 }
 
 /***** TABLET *****/
